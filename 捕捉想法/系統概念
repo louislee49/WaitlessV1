@@ -1,0 +1,60 @@
+TRACE_MODELER_FILE_FORMAT 2
+
+# Created with Trace Modeler v1.6.9
+
+ENCODING UTF-8
+TIMESTAMP 2013/06/13 10:46:49:551
+
+# diagram style
+LIFELINE_SPACING 300
+FOUND_CALL_LENGTH 75
+
+MESSAGE_SPACING 20
+ACTIVATION_WIDTH small
+TARGET_ICON_SIZE small
+CALL_ALIGNMENT sender
+RETURN_ALIGNMENT receiver
+SHOW_FLOW false
+FLOW_COLOR #90C0FF80
+MESSAGE_NUMBERING off
+SHOW_EMPTY_RETURNS false
+LAYOUT_LEFT_TO_RIGHT true
+FONT font0 "Arial" 11
+FONT_REGULAR font0
+FONT_COMMENTS font0
+FONT_TARGETS font0
+
+
+
+DIAGRAM_FRAME "系統概念"
+
+# targets
+ACTOR target0 "使用者"
+OBJECT target1 "來得巧App"
+
+# trace
+CALL target0 "來到站牌"   
+   CONSTRUCT target1 "啟動"   
+      CALL target1 "取得站牌位置"   
+      RETURN ""
+   RETURN "要求手機對準馬路"
+   CALL target1 "將手機對準馬路"   
+      CALL target1 "篩選經過所在站牌的路線"   
+      RETURN ""
+   RETURN "顯示路線和來車時間"
+   CALL target1 "提供我的最愛"   
+   RETURN "顯示我的最愛"
+   CALL target1 "選擇前往之目的地"   
+      CALL target1 "篩選有經過目的地的路線"   
+      RETURN ""
+   RETURN "顯示路線和來車時間"
+RETURN ""
+CALL target0 "即將出門搭公車"   
+   CALL target1 "給我附近的所有站牌"   
+   RETURN "顯示附近的所有站牌"
+   CALL target1 "選擇等車站牌"   
+   RETURN "顯示所有來車路線和抵達時間"
+RETURN ""
+
+# comments
+COMMENT 1.4818657769097223 -0.9066499305423633 "1.經常性前住之目的地\n2.臨時性前往且不知道有何路線可到達的目的地"

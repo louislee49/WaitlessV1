@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain majorVersion="2" minorVersion="0">
+    <attributes>
+        <attribute class="java.lang.String" key="name">Finite State Machine</attribute>
+        <attribute class="java.lang.Boolean" key="builtIn">false</attribute>
+    </attributes>
+    <entityClass>
+        <attributes>
+            <attribute class="java.util.UUID" key="uuid">8d832126-5195-4dfb-af44-d3b8c6401c31</attribute>
+            <attribute class="java.lang.String" key="name">Start</attribute>
+            <attribute class="com.arciem.graphics.ColorRGB" key="color">
+                <colorRGB blue="0.800000011920929" green="0.800000011920929" red="0.800000011920929"/>
+            </attribute>
+            <attribute class="java.lang.Boolean" key="builtIn">false</attribute>
+        </attributes>
+    </entityClass>
+    <entityClass>
+        <attributes>
+            <attribute class="java.util.UUID" key="uuid">e7d4af1a-fe6b-4eee-9db9-3cf2cbe49de1</attribute>
+            <attribute class="java.lang.String" key="name">End</attribute>
+            <attribute class="com.arciem.graphics.ColorRGB" key="color">
+                <colorRGB blue="0.0" green="0.0" red="0.0"/>
+            </attribute>
+            <attribute class="java.lang.Boolean" key="builtIn">false</attribute>
+        </attributes>
+    </entityClass>
+    <entityClass>
+        <attributes>
+            <attribute class="java.util.UUID" key="uuid">01b1d04c-fc2a-4a47-8ef1-6fe5bc20203e</attribute>
+            <attribute class="java.lang.String" key="name">State</attribute>
+            <attribute class="com.arciem.graphics.ColorRGB" key="color">
+                <colorRGB blue="0.20000000298023224" green="1.0" red="0.0"/>
+            </attribute>
+            <attribute class="java.lang.Boolean" key="builtIn">false</attribute>
+        </attributes>
+    </entityClass>
+    <entityClass>
+        <attributes>
+            <attribute class="java.util.UUID" key="uuid">b64ecb21-956f-4ac1-8fb0-11645cec579a</attribute>
+            <attribute class="java.lang.String" key="name">Interactive</attribute>
+            <attribute class="com.arciem.graphics.ColorRGB" key="color">
+                <colorRGB blue="0.20000000298023224" green="0.0" red="1.0"/>
+            </attribute>
+            <attribute class="java.lang.Boolean" key="builtIn">false</attribute>
+        </attributes>
+    </entityClass>
+</domain>
